@@ -70,7 +70,7 @@ class Student
     sql=<<-SQL
     SELECT COUNT(*)
     FROM students
-    WHERE grade="9th"
+    WHERE grade=9
     SQL
 
     DB[:conn].execute(sql).map do |row|
