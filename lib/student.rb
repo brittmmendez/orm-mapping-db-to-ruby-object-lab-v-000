@@ -19,7 +19,7 @@ class Student
     # return a new instance of the Student class
 
     sql=<<-SQL
-    SELECT * 
+    SELECT *
     FROM students
     WHERE name=?
     LIMIT 1
